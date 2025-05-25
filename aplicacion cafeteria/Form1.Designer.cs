@@ -30,7 +30,6 @@
         {
             pictureBox1 = new PictureBox();
             label4 = new Label();
-            textBox1 = new TextBox();
             label5 = new Label();
             textBox2 = new TextBox();
             linkLabel1 = new LinkLabel();
@@ -38,6 +37,7 @@
             label6 = new Label();
             linkLabel3 = new LinkLabel();
             panel1 = new Panel();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -62,13 +62,6 @@
             label4.TabIndex = 4;
             label4.Text = "Email adress";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(109, 217);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(254, 23);
-            textBox1.TabIndex = 5;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -81,16 +74,17 @@
             // 
             // textBox2
             // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(109, 165);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(254, 25);
+            textBox2.Size = new Size(254, 18);
             textBox2.TabIndex = 7;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(285, 243);
+            linkLabel1.Location = new Point(270, 238);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(93, 15);
             linkLabel1.TabIndex = 8;
@@ -100,10 +94,10 @@
             // button1
             // 
             button1.BackColor = Color.WhiteSmoke;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(157, 263);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(131, 271);
             button1.Name = "button1";
-            button1.Size = new Size(153, 37);
+            button1.Size = new Size(189, 27);
             button1.TabIndex = 9;
             button1.Text = "Sign up";
             button1.UseVisualStyleBackColor = false;
@@ -112,7 +106,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(143, 301);
+            label6.Location = new Point(131, 301);
             label6.Name = "label6";
             label6.Size = new Size(167, 17);
             label6.TabIndex = 10;
@@ -121,7 +115,7 @@
             // linkLabel3
             // 
             linkLabel3.AutoSize = true;
-            linkLabel3.Location = new Point(304, 303);
+            linkLabel3.Location = new Point(292, 303);
             linkLabel3.Name = "linkLabel3";
             linkLabel3.Size = new Size(47, 15);
             linkLabel3.TabIndex = 12;
@@ -131,6 +125,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Tan;
+            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(linkLabel3);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label6);
@@ -138,12 +133,21 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(342, 31);
             panel1.Name = "panel1";
             panel1.Size = new Size(449, 386);
             panel1.TabIndex = 13;
+            panel1.Paint += panel1_Paint;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(109, 217);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(254, 18);
+            textBox1.TabIndex = 13;
             // 
             // Form1
             // 
@@ -165,7 +169,6 @@
         #endregion
         private PictureBox pictureBox1;
         private Label label4;
-        private TextBox textBox1;
         private Label label5;
         private TextBox textBox2;
         private LinkLabel linkLabel1;
@@ -173,5 +176,6 @@
         private Label label6;
         private LinkLabel linkLabel3;
         private Panel panel1;
+        private TextBox textBox1;
     }
 }
