@@ -45,7 +45,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.log_cafe;
-            pictureBox1.Location = new Point(181, 12);
+            pictureBox1.Location = new Point(173, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -93,7 +93,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.WhiteSmoke;
+            button1.BackColor = Color.BurlyWood;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(131, 271);
             button1.Name = "button1";
