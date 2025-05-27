@@ -261,10 +261,10 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.galletas;
-            pictureBox7.Location = new Point(-179, -90);
+            pictureBox7.Image = Properties.Resources.tortas;
+            pictureBox7.Location = new Point(-320, -203);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(599, 186);
+            pictureBox7.Size = new Size(874, 299);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 14;
             pictureBox7.TabStop = false;
@@ -385,6 +385,7 @@
             linkLabel3.TabIndex = 12;
             linkLabel3.TabStop = true;
             linkLabel3.Text = "Ver mas";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
             // label18
             // 

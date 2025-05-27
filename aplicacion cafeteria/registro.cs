@@ -21,5 +21,13 @@ namespace aplicacion_cafeteria
         {
 
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 Form1Form = new Form1();
+            Form1Form.Show();
+            this.Hide();
+
+        }
     }
 }

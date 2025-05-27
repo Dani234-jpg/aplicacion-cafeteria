@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace aplicacion_cafeteria
 {
-    public partial class Reposteria : Form
+    public partial class Contraseña : Form
     {
-        public Reposteria()
+        public Contraseña()
         {
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-         
         }
     }
 }

@@ -1,3 +1,5 @@
+using Microsoft.Win32;
+
 namespace aplicacion_cafeteria
 {
     public partial class Form1 : Form
@@ -29,6 +31,14 @@ namespace aplicacion_cafeteria
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            registro registroForm = new registro();
+            registroForm.Show();
+            this.Hide();
 
         }
     }
